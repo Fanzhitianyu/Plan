@@ -102,7 +102,6 @@ public class PlanCommand {
         CommandWithSubcommands command = CommandWithSubcommands.builder(locale)
                 .alias(commandName)
                 .colorScheme(colors)
-                .requirePermission(Permissions.USE_COMMAND.getPermission())
                 .subcommand(serverCommand())
                 .subcommand(serversCommand())
                 .subcommand(networkCommand())

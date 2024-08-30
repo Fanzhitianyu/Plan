@@ -215,7 +215,7 @@ public class LocaleSystem implements SubSystem {
         }
     }
 
-    public Optional<Locale> loadSettingLocale() {
+    private Optional<Locale> loadSettingLocale() {
         try {
             String setting = config.get(PluginSettings.LOCALE);
             if ("write-all".equalsIgnoreCase(setting)) {
